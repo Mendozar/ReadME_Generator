@@ -15,7 +15,7 @@ ${data.description}
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub) 
 ## Installation
-        ${data.installation}
+${data.installation}
 ## Usage
 ${data.usage}
 ## Licence
@@ -27,6 +27,11 @@ ${data.test}
 ## Repository
 - [Project Repo](${data.repo})
 ## GitHub
+
+![Image of me](${githubInfo.githubImage})
+- ${githubInfo.name}
+- [GitHub Profile](${githubInfo.profile})
+- <${githubInfo.email}>
 `;
 }
 

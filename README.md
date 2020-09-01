@@ -1,8 +1,8 @@
 
-# **ReadMe Generator**
+# **1**
 undefined
 ## Description 
-An application that helps users generate a ReadMe.
+1
 ## Table of contents
 - [Description](#Description)
 - [Installation](#Installation)
@@ -13,15 +13,15 @@ An application that helps users generate a ReadMe.
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub) 
 ## Installation
-        Enter "npm install" and then "node index.js" in the command line to start running the application.
+        1
 ## Usage
-AS A developer
+1
 ## Licence
-unlicense
+mit
 ## Contributors
-Rudy Mendoza.
+1
 ## Test
-Quiz
+1
 ## Repository
 - [Project Repo](undefined)
 ## GitHub

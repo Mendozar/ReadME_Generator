@@ -1,7 +1,7 @@
 //Load Modules
 const inquirer = require("inquirer");
 const fs = require('fs');
-//const axios = require("axios");
+const axios = require("axios");
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // Questions
@@ -71,22 +71,44 @@ function promptUserInfo() {
 
 // function to write README file
 function writeToFile(fileName, data) {
+
+  const queryUrl = `https://api.github.com/users/${data.username}`;
+
+  axios.get(queryUrl).then(function(res) {
+      
+      const githubInfo = {
+          githubImage: res.data.avatar_url,
+          email: res.data.email,
+          profile: res.data.html_url,
+          name: res.data.name
+      };
+
   fs.writeFile(fileName, data, "utf8", function (err) {
+
     if (err) {
+    
       throw err;
+    
     }
     console.log("readme generated!");
+
   });
-}
 
 // function to initialize program
 async function init() {
+
   try {
+
     const userAnswers = await promptUserInfo();
+
     generateMarkdown(userAnswers);
+    
     writeToFile("README.md", generateMarkdown(userAnswers));
+
     console.log("Success!");
+
   } catch (err) {
+
     console.log(err);
   }
 }
