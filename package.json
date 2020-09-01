@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
-    "inquirer": "^7.3.3"
+    "axios": "^0.19.2",
+    "dotenv": "^8.0.0",
+    "inquirer": "^6.3.1"
   }
 }

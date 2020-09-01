@@ -2,7 +2,7 @@
 function generateMarkdown(data, githubInfo) {
   return `
 # **${data.title}**
-${data.badge}
+![Bower](https://img.shields.io/bower/l/markdown?color=%23green&label=license&logo=${data.license}&style=plastic)
 ## Description 
 ${data.description}
 ## Table of contents
@@ -15,19 +15,18 @@ ${data.description}
 - [Repository Link](#Repository)
 - [GitHub Info](#GitHub) 
 ## Installation
-${data.installation}
+        ${data.installation}
 ## Usage
 ${data.usage}
 ## Licence
-${data.licence}
+![Bower](https://img.shields.io/bower/l/markdown?color=%23green&label=license&logo=${data.license}&style=plastic)
 ## Contributors
 ${data.contributing}
 ## Test
 ${data.test}
-## Repository
-- [Project Repo](${data.repo})
-## GitHub
+## Questions
 
+## GitHub
 ![Image of me](${githubInfo.githubImage})
 - ${githubInfo.name}
 - [GitHub Profile](${githubInfo.profile})
