@@ -48,9 +48,10 @@ function promptUserInfo() {
     // Add a badge for that license near the top of the Readme
     // Add a notice to the License section explaining which license the application is covered under.
     {
-      type: "input",
+      type: "list",
       name: "licence",
-      message: "Please provide the project licence or your badge link"
+      message: "Please provide the project licence or your badge link.",
+      choices: ["mit", "lgpl-3.0", "mpl-2.0","agpl-3.0","unlicense","apache-2.0","gpl-3.0"]
     },
     // Github Username
     {
